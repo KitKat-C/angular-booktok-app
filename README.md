@@ -41,4 +41,4 @@ This project is a single-page application built using AngularJS that showcases t
 
 
 
-Watch video here 
+Watch video here: https://youtu.be/7WyJomKfRBA 
