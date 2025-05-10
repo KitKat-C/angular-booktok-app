@@ -1,0 +1,22 @@
+
+
+<div class="container">
+  <a href="#!/books" class="back-button">← Back to list</a>
+</div>
+
+
+  <div class="book-detail">
+    <h2>{{book.title}}</h2>
+    <img ng-src="{{book.thumbnail}}" alt="{{book.title}}" class="detail-thumb" />
+
+    <ul>
+      <li><strong>Author:</strong> {{book.authors}}</li>
+      <li><strong>Genre:</strong> {{book.categories}}</li>
+      <li><strong>Rating:</strong> {{book.average_rating}} ⭐</li>
+      <li><strong>Pages:</strong> {{book.num_pages}}</li>
+      <li><strong>Year Published:</strong> {{book.published_year}}</li>
+    </ul>
+
+    <p>{{book.description}}</p>
+  </div>
+</div>

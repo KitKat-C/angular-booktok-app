@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookStoreApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Bookstore</title>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <h1 class="navbar-title">The Reading Shelf</h1>
+      </div>
+    </div>
+  </header>
+  
+
+  <main ng-view></main>
+
+  <footer>
+    <p class="text-center">&copy; 2025 Online Bookstore – Built with AngularJS</p>
+  </footer>
+</body>
+</html>
+

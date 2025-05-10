@@ -1,0 +1,35 @@
+
+
+
+<div class="container">
+  <h2 class="booklistTitle">BookTok List</h2>
+  <p class="text-center">Browse our list of trending books on Booktok at the moment!</p>
+  <hr class="section-divider">
+
+  <h3 style="text-align: center; margin-top: 10px;">Browse books</h3>
+
+
+  <div class="search-bar">
+    <input type="text" ng-model="query" placeholder="Search by title, author, or genre...">
+  </div>
+
+  <div class="bookshelf">
+    <div class="shelf-row" ng-repeat="row in booksGrouped">
+      <div class="shelf-book" ng-repeat="book in row">
+        <a href="#!/books/{{book.isbn13}}">
+          <img ng-src="{{book.thumbnail && book.thumbnail !== '' ? book.thumbnail : getRandomPlaceholder()}}"
+          alt="{{book.title}}" class="book-cover" />
+     
+          <div class="book-meta">
+            <div class="book-title">{{book.title}}</div>
+            <div class="book-author">{{book.authors}}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
